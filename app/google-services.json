@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566331103593",
+    "project_id": "login-registration-d986d",
+    "storage_bucket": "login-registration-d986d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566331103593:android:c8ce122504e8a36fbbc5f8",
+        "android_client_info": {
+          "package_name": "com.multiscreen.final_lock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBu-qpu9VDtbk4t3523FX_5WxTZzojL84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FINAL_LOCK</string>
+    <string name="logout">Logout</string>
+    <string name="next">next</string>
+    <string name="update">Update</string>
+    <string name="password">Password</string>
+    <string name="contact">Contact</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="_0">0</string>
+    <string name="previous">Previous</string>
+    <string name="currapps">currApps</string>
+    <string name="xxx">XXX</string>
+    <string name="EMPTY">_____________</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="student">student</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="newlock">newLock</string>
+    <string name="currlock">currLock</string>
+    <string name="profile">profile</string>
+    <string name="notifications">notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_applanding">APPLANDING</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_icon_desc">Music Player</string>
+    <string name="ok">OK</string>
+    <string name="set_days_limit">Set Days Limit</string>
+    <string name="days">Days</string>
+    <string name="mm">MM</string>
+    <string name="sym">:</string>
+    <string name="hh">HH</string>
+    <string name="set_time_limit_hh_mm">Set Time Limit (HH:MM)</string>
+    <string name="appname">App Name</string>
+    <string name="set_time_limit">Set Time Limit</string>
+    <string name="set_time">Set time</string>
+    <string name="from_to">from - to</string>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectApp">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appname"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/arbutus_slab" />
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/appName"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/timeLimitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:textStyle="bold"
+        android:text="@string/set_time_limit_hh_mm"
+        android:textSize="18sp"
+        android:layout_below="@+id/appIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeLimitText"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/timeset"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/hoursInput"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hh"
+            android:inputType="number"
+            android:maxLength="2"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sym"
+            android:id="@+id/sym"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/minutesInput"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/mm"
+            android:inputType="number"
+            android:maxLength="2"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/intervals"
+        android:layout_below="@+id/timeset">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/intervaldaysset"
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:id="@+id/daysLimitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:textStyle="bold"
+                android:text="@string/set_days_limit"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/daysInput"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/days"
+                android:inputType="number"
+                android:maxLength="3"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- New section for time interval input -->
+        <LinearLayout
+            android:id="@+id/timeintervalset"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeIntervalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Set Interval"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/fromInput"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hh"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sym"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/endAmPmSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/am_pm_array"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intervals"
+        android:layout_marginTop="16dp"
+        android:text="@string/set_time_limit"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#8A96E3"
+        android:textColor="@android:color/black" />
+</RelativeLayout>

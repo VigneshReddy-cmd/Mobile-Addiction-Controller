@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FORGETPASS"
+    android:background="@drawable/signup_background"
+    android:alpha="0.9">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_title"
+        android:text="RESET PASSWORD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:drawableStart="@drawable/reenter"
+         >
+
+    </TextView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:layout_below="@+id/forget_email"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/progressBar"
+        android:visibility="invisible">
+
+    </ProgressBar>
+    <EditText
+        android:id="@+id/forget_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_title"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="20dp"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="visible">
+
+    </EditText>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="RESET"
+        android:textSize="15dp"
+         android:id="@+id/verify_btn"
+        android:layout_below="@id/forget_email"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#80B9F1"
+        android:background="@color/black"
+
+        android:layout_margin="20dp" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="BACK"
+        android:textSize="15dp"
+        android:id="@+id/back_btn"
+        android:layout_below="@id/verify_btn"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#80B9F1"
+        android:background="@color/black"
+
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>

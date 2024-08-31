@@ -1,0 +1,8 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="material_dynamic_neutral40">#888888</color> <!-- Replace with the actual color -->
+    <color name="your_custom_color">#ED9481</color>
+    <color name="landingbuttons">#8866DA</color>
+    <color name="lavender">#9CA5F4</color>
+</resources>
